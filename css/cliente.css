@@ -1,0 +1,133 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/FONDO4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 30px; /* Espaciado entre las secciones */
+    flex-wrap: wrap;
+}
+
+/* Formulario */
+.form-container {
+    width: 100%;
+    max-width: 350px;  /* Reducir aún más el tamaño del formulario */
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 15px;  /* Reducir el padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Efecto al pasar el cursor */
+}
+
+/* Títulos */
+h2, h3 {
+    color: #1abc9c; /* Verde azulado */
+    text-align: center;
+    font-size: 1.3rem;  /* Reducir tamaño del texto */
+    margin-bottom: 15px;
+}
+
+/* Etiquetas e inputs */
+label {
+    font-size: 13px; /* Reducir tamaño de las etiquetas */
+    color: #7f8c8d;
+    margin-bottom: 6px; /* Reducir espacio entre etiqueta e input */
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;  /* Reducir padding */
+    margin-bottom: 15px;  /* Reducir el margen entre inputs */
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    background-color: #ecf0f1; /* Fondo gris claro */
+    color: #2c3e50; /* Texto oscuro */
+    font-size: 15px;  /* Reducir tamaño de fuente */
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #1abc9c; /* Verde azulado */
+    background-color: #ffffff; /* Fondo blanco al hacer foco */
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 10px;  /* Reducir el padding del botón */
+    margin: 10px 0;
+    background-color: #1abc9c; /* Verde azulado */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;  /* Reducir tamaño de fuente */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085; /* Verde más oscuro */
+}
+
+/* Mensajes */
+.mensaje {
+    text-align: center;
+    font-size: 14px;  /* Reducir tamaño del texto */
+    margin-top: 15px;
+    color: #e74c3c; /* Rojo para errores */
+}
+
+/* Cuadro de resultados */
+.table-container {
+    width: 100%;
+    max-width: 850px;  /* Reducir el tamaño máximo de la tabla */
+    background-color: #ffffff;
+    padding: 25px;  /* Reducir padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-container h3 {
+    color: #3498db; /* Azul */
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+th, td {
+    padding: 10px;  /* Reducir el padding de las celdas */
+    text-align: left;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+th {
+    background-color: #f7f9fb;
+    color: #2c3e50;
+}
+
+tr:hover {
+    background-color: #f1f8f6; /* Fondo suave al pasar el cursor */
+}

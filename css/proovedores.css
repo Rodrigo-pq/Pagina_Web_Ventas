@@ -1,0 +1,156 @@
+/* Estilo básico para el cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/FONDOX.png'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    color: #ffffff;  /* Texto blanco por defecto */
+    display: flex;
+    justify-content: space-between; /* Coloca los formularios a la izquierda y derecha */
+    padding: 20px;
+    gap: 15px; /* Espacio más pequeño entre los formularios */
+    flex-wrap: wrap; /* Permite que los formularios se ajusten en pantallas más pequeñas */
+}
+
+/* Contenedor principal */
+h1 {
+    text-align: center;
+    color: #00bcd4;  /* Azul brillante */
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+/* Contenedor de formularios */
+.form-container {
+    background-color: #002a3d;  /* Fondo azul oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #00bcd4;  /* Bordes con azul brillante */
+}
+
+/* Títulos de los formularios */
+h2 {
+    color: #00bcd4;  /* Azul brillante */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para las etiquetas y los campos de texto */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #b3b3b3;  /* Gris claro para las etiquetas */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #333;  /* Borde oscuro */
+    background-color: #00354b;  /* Fondo azul oscuro para los campos de texto */
+    color: #ffffff;  /* Texto blanco */
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #00bcd4;  /* Borde azul brillante al enfocar */
+    outline: none;
+}
+
+/* Botones de acción */
+button {
+    background-color: #00bcd4;  /* Azul brillante para los botones */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #007c8a;  /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilo para las alertas */
+.alert {
+    background-color: #002a3d;  /* Fondo azul oscuro */
+    color: #e74c3c;  /* Texto rojo */
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para la tabla de registros */
+.records-container {
+    max-width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #444;  /* Borde gris oscuro */
+}
+
+th {
+    background-color: #00bcd4;  /* Azul brillante para la cabecera */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #002a3d;  /* Filas con fondo azul oscuro */
+}
+
+tr:hover {
+    background-color: #00354b;  /* Fila al pasar el ratón */
+}
+
+/* Botones dentro de la tabla */
+form button {
+    background-color: #f44336;  /* Botón de eliminar con color rojo */
+    margin: 5px;
+}
+
+form button:hover {
+    background-color: #e53935;  /* Rojo más oscuro al pasar el ratón */
+}
+
+/* Estilo para el botón regresar */
+.regresar-btn {
+    background-color: #f1c40f;  /* Amarillo brillante */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.regresar-btn:hover {
+    background-color: #e1b400;  /* Amarillo más oscuro al pasar el ratón */
+}

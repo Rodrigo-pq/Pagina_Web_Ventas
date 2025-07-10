@@ -1,0 +1,139 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f4f4f4; /* Color neutro */
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: row-reverse; /* Invierte la dirección para que el formulario quede a la derecha */
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+/* Formulario */
+.form-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #007bff; /* Color primario */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Estilo del formulario */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+form input:focus,
+form button:focus {
+    outline: none;
+    border-color: #007bff; /* Color primario */
+}
+
+form button {
+    background-color: #28a745; /* Color secundario */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #218838; /* Variación del color secundario */
+}
+
+/* Tabla de productos */
+.product-container {
+    flex: 2;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-container h2 {
+    text-align: center;
+    color: #007bff; /* Color primario */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff; /* Color primario */
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botón de regresar */
+.btn-back {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff; /* Color primario */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+    background-color: #0056b3; /* Variación del color primario */
+}

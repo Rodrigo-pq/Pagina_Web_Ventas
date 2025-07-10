@@ -1,0 +1,213 @@
+/* Diseño General */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/FONDO3.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    color: #333;
+}
+
+header {
+    background-color: #000; /* Negro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad para hacer contraste */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones de navegación */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    text-decoration: none;
+    background-color: #000; /* Negro */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 20%;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #3498db; /* Azul */
+}
+
+/* Listado de productos */
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff; /* Blanco */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product-content {
+    padding: 15px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.product .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #3498db; /* Azul */
+}
+
+.product button {
+    padding: 10px 15px;
+    background-color: #3498db; /* Azul */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #2980b9; /* Azul oscuro */
+}
+
+/* Carrito de compras */
+#cart {
+    background-color: #fff; /* Blanco */
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cart h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#cartItems {
+    list-style: none;
+    padding: 0;
+}
+
+#cartItems li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#totalPrice {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #27ae60;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e74c3c; /* Rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b; /* Rojo oscuro */
+}
+
+/* Boleta de Compra */
+#boleta {
+    background-color: #fff; /* Blanco */
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#boleta h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#boletaItems {
+    list-style: none;
+    padding: 0;
+}
+
+#boletaItems li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#boletaTotal {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #27ae60;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000; /* Negro */
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* Imágenes */
+#cart img,
+#boleta img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+

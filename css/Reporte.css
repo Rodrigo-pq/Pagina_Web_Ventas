@@ -1,0 +1,119 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo del formulario */
+form {
+    background: #4CAF50; /* Color de fondo */
+    padding: 15px; /* Reducción del padding */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+    max-width: 400px; /* Limitar el ancho máximo del formulario a 400px */
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+/* Efecto flotante al hacer hover sin aumentar tamaño */
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Solo cambia la sombra */
+}
+
+/* Estilo de los campos de entrada */
+form input, form button {
+    width: 100%;
+    padding: 8px; /* Reducir el padding en los inputs y botones */
+    margin: 8px 0; /* Reducir el margen entre los elementos */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form button:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+/* Estilo para el botón */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Mensaje de éxito */
+.message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+
+/* Estilo de los encabezados */
+h2, h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo flotante 3D sin cambiar tamaño */
+form, table {
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover, table:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Solo aplica el efecto de sombra */
+}

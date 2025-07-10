@@ -1,0 +1,132 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    background: url('../img/FONDO5.jpg') no-repeat center center fixed;
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda la pantalla */
+    display: flex;
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+    background-color: #fc5412;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo de los enlaces en el menú lateral */
+.PMENU ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.PMENU ul li {
+    margin: 20px 0;
+}
+
+.PMENU ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover para enlaces */
+.PMENU ul li a:hover {
+    background-color: #D32F2F; /* Rojo para hover */
+}
+
+.PMENU ul li a i {
+    margin-right: 10px;
+}
+
+/* Estilos del contenedor principal */
+.dashboard-container {
+    margin-left: 270px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+/* Estilos de las tarjetas de estadísticas */
+.stat-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #D32F2F; /* Títulos en rojo */
+}
+
+.stat-card p {
+    font-size: 20px;
+    color: #34495E; /* Texto en negro */
+}
+
+/* Tarjetas con fondo blanco y colores temáticos */
+.orange {
+    background-color: #F39C12;
+    color: white;
+}
+
+.green {
+    background-color: #27AE60;
+    color: white;
+}
+
+.blue {
+    background-color: #3498DB;
+    color: white;
+}
+
+.red {
+    background-color: #E74C3C;
+    color: white;
+}
+
+.cyan {
+    background-color: #1ABC9C;
+    color: white;
+}
+
+/* Opcional: Fondo general con un color de texto en negro */
+body {
+    color: #34495E; /* Color de texto en negro */
+}
